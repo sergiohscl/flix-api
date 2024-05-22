@@ -46,4 +46,6 @@ https://www.djangoproject.com/
 
 ## Criando apps
     python manage.py startapp <nome app>
-    
+
+## Importar o arquvivo .csv 
+    python manage.py import_actors acotrs.csv
