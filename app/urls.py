@@ -25,7 +25,7 @@ urlpatterns = [
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 
     path('admin/', admin.site.urls),
-    # path('genres/', genre_create_list_view, name='genre-list'), 
+    # path('genres/', genre_create_list_view, name='genre-list'),
     # path('genres/<int:pk>', genre_detail_view, name='genre-detail-view'),
     path('api/v1/', include('authentication.urls')),
     path('api/v1/', include('genres.urls')),

@@ -1,7 +1,7 @@
 # import json
 # from django.http import JsonResponse
 # from django.shortcuts import render
-# from django.views.decorators.csrf import csrf_exempt 
+# from django.views.decorators.csrf import csrf_exempt
 # from django.shortcuts import get_object_or_404
 
 from genres.models import Genre
@@ -27,7 +27,7 @@ class GenreRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
 # def genre_create_list_view(request):
 #     if request.method == "GET":
 #         genres = Genre.objects.all()
-#         data = [{'id': genre.id, 'name': genre.name} for genre in genres]    
+#         data = [{'id': genre.id, 'name': genre.name} for genre in genres]
 #         return JsonResponse(data, safe=False)
 #     elif request.method == "POST":
 #         data = json.loads(request.body.decode("utf-8"))
@@ -51,7 +51,7 @@ class GenreRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
 #         genre.name = data["name"]
 #         genre.save()
 #         return JsonResponse(
-#             {'id': genre.id, 'name': genre.name},            
+#             {'id': genre.id, 'name': genre.name},
 #         )
 #     elif request.method == "DELETE":
 #         genre.delete()
