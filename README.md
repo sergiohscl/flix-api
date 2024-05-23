@@ -49,3 +49,7 @@ https://www.djangoproject.com/
 
 ## Importar o arquvivo .csv 
     python manage.py import_actors acotrs.csv
+
+## link deploy pythonanywhere
+    https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/
+    
